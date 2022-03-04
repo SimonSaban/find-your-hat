@@ -80,15 +80,12 @@ class Field {
                     break;
                 case fieldCharacter: 
                     this.field[y][x] = pathCharacter;
-                    this.gameOn = true;
                     break;
                 default:
                     break;
             }
         }
     }
-
-
 
     static generateField( fieldDefinition ) {
         const { height, width, holesPercent } = fieldDefinition;
